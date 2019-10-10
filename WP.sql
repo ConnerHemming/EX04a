@@ -6,3 +6,5 @@ SELECT ProjectName, Department, MaxHours
 FROM PROJECT
 SELECT ProjectName, MaxHours, Department
 FROM PROJECT;
+SELECT Department
+FROM PROJECT;
