@@ -140,7 +140,7 @@ WHERE   EmployeeNumber IN
 
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT;
-WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber
+WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber;
 ORDER BY EMPLOYEE.EmployeeNumber, ProjectID;
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE JOIN ASSIGNMENT
