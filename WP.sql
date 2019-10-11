@@ -79,7 +79,44 @@ SELECT COUNT (Department) AS NumberOfDepartments
 FROM PROJECT;
 SELECT COUNT (DISTINCT Department) AS NumberOfDepartments
 FROM PROJECT;
-
+SELECT SUM(MaxHours) AS TotalMaxHours, 
+AVG(MaxHours) AS AverageMaxHours, 
+MIN(MaxHours) AS MinimumMaxHours, 
+MAX(MaxHours) AS MaximumMaxHours
+FROM PROJECT
+WHERE ProjectID <= 1200;
+SELECT *
+FROM PROJECT
+WHERE MaxHours > AVG(MaxHours);
+SELECT ProjectID, ProjectName, MaxHours, 
+       (24.50 * MaxHours) AS MaxProjectCost 
+FROM PROJECT;
+SELECT Department, Count (*) AS NumberOfEmployees
+FROM EMPLOYEE
+GROUP BY Department;
+SELECT Department, Count (*) AS NumberOfEmployees
+FROM EMPLOYEE
+GROUP BY Department;
+SELECT Department, Count (*) AS NumberOfEmployees
+FROM EMPLOYEE
+WHERE EmployeeNumber <= 10
+GROUP BY Department
+HAVING COUNT (*) > 1;
+SELECT FirstName, LastName
+FROM EMPLOYEE
+WHERE EmployeeNumber IN (6, 10, 11, 16, 17);
+SELECT DISTINCT EmployeeNumber
+FROM ASSIGNMENT
+WHERE HoursWorked > 50;
+SELECT FirstName, LastName
+FROM EMPLOYEE
+WHERE EmployeeNumber IN
+        (SELECT DISTINCT EmployeeNumber
+        FROM ASSIGNMENT
+        WHERE HoursWorked > 50);
+SELECT DISTINCT ProjectID
+FROM PROJECT
+WHERE Department = 'Accounting';
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT
 WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber
