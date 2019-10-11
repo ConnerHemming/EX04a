@@ -22,3 +22,6 @@ WHERE Department = 'Accounting';
 SELECT FirstName, LastName, Department, OfficePhone 
 FROM EMPLOYEE
 ORDER BY Department;
+SELECT FirstName, LastName, Department, OfficePhone 
+FROM EMPLOYEE
+ORDER BY Department DESC;
