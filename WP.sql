@@ -19,3 +19,6 @@ WHERE MaxHours > 135;
 SELECT FirstName, LastName, Department, OfficePhone 
 FROM EMPLOYEE
 WHERE Department = 'Accounting';
+SELECT FirstName, LastName, Department, OfficePhone 
+FROM EMPLOYEE
+ORDER BY Department;
