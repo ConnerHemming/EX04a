@@ -71,3 +71,5 @@ WHERE OfficePhone IS NULL;
 SELECT FirstName, LastName, Department, OfficePhone
 FROM EMPLOYEE
 WHERE OfficePhone IS NOT NULL;
+SELECT COUNT(*)
+FROM PROJECT;
