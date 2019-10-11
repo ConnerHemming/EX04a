@@ -117,6 +117,10 @@ WHERE EmployeeNumber IN
 SELECT DISTINCT ProjectID
 FROM PROJECT
 WHERE Department = 'Accounting';
+SELECT DISTINCT EmployeeNumber
+FROM ASSIGNMENT
+WHERE HoursWorked > 40
+
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT
 WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber
