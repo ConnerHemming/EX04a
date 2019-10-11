@@ -130,3 +130,8 @@ SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE JOIN ASSIGNMENT
     ON EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber
 ORDER BY EMPLOYEE.EmployeeNumber, ProjectID;
+SELECT FirstName, LastName, ProjectID, HoursWorked
+FROM EMPLOYEE AS E JOIN ASSIGNMENT AS A
+    ON E.EmployeeNumber = A.EmployeeNumber
+WHERE HoursWorked > 50
+ORDER BY LastName, FirstName, ProjectID;
