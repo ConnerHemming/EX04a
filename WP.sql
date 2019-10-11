@@ -158,6 +158,7 @@ FROM EMPLOYEE AS E JOIN ASSIGNMENT AS A
             ON A.ProjectID = P.ProjectID
 ORDER BY P.ProjectID, A.EmployeeNumber;
 SELECT * FROM PROJECT;
+
 SELECT ProjectName, FirstName, LastName, HoursWorked
 FROM EMPLOYEE AS E JOIN ASSIGNMENT AS A
     ON E.EmployeeNumber = A.EmployeeNumber
