@@ -120,6 +120,13 @@ WHERE Department = 'Accounting';
 SELECT DISTINCT EmployeeNumber
 FROM ASSIGNMENT
 WHERE HoursWorked > 40
+SELECT  DISTINCT    EmployeeNumber
+FROM    ASSIGNMENT
+WHERE   HoursWorked > 40
+    AND ProjectID IN
+        (SELECT ProjectID
+        FROM    PROJECT
+        WHERE   Department = 'Accounting');
 
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT
