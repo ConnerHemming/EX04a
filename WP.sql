@@ -10,3 +10,6 @@ SELECT Department
         FROM PROJECT;
 SELECT DISTINCT Department 
 FROM PROJECT;
+SELECT *
+FROM PROJECT
+WHERE Department = 'Finance';
