@@ -8,3 +8,5 @@ SELECT ProjectName, MaxHours, Department
         FROM PROJECT;
 SELECT Department
         FROM PROJECT;
+SELECT DISTINCT Department 
+FROM PROJECT;
