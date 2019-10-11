@@ -137,10 +137,9 @@ WHERE   EmployeeNumber IN
                 (SELECT ProjectID
                 FROM PROJECT
                 WHERE   Department = 'Accounting'));
-
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT;
-WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber;
+WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber
 ORDER BY EMPLOYEE.EmployeeNumber, ProjectID;
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE JOIN ASSIGNMENT
@@ -148,7 +147,7 @@ FROM EMPLOYEE JOIN ASSIGNMENT
 ORDER BY EMPLOYEE.EmployeeNumber, ProjectID;
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE AS E JOIN ASSIGNMENT AS A
-    ON E.EmployeeNumber = A.EmployeeNumber
+   ON E.EmployeeNumber = A.EmployeeNumber
 WHERE HoursWorked > 50
 ORDER BY LastName, FirstName, ProjectID;
 SELECT FirstName, LastName, ProjectID, HoursWorked
