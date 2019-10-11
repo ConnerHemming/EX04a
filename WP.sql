@@ -1,5 +1,5 @@
 SELECT ProjectID, ProjectName, Department, MaxHours, StartDate, EndDate
-        FROM PROJECT
+        FROM PROJECT;
 SELECT * 
         FROM PROJECT;
 SELECT ProjectName, Department, MaxHours
