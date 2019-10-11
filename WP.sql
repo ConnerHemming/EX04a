@@ -65,3 +65,6 @@ WHERE OfficePhone LIKE '360-287-88%';
 SELECT *
 FROM EMPLOYEE
 WHERE Department LIKE '%ing';
+SELECT FirstName, LastName, Department, OfficePhone
+FROM EMPLOYEE
+WHERE OfficePhone IS NULL;
