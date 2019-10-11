@@ -28,3 +28,7 @@ ORDER BY Department DESC;
 SELECT FirstName, LastName, Department, OfficePhone 
 FROM EMPLOYEE
 ORDER BY Department DESC, LastName ASC;
+SELECT FirstName, LastName, Department, OfficePhone 
+FROM EMPLOYEE
+WHERE Department = 'Accounting'
+AND OfficePhone = '360-285-8430';
