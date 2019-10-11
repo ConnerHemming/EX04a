@@ -50,3 +50,6 @@ SELECT FirstName, LastName, Department, OfficePhone
 FROM EMPLOYEE
 WHERE EmployeeNumber >= 2
 AND EmployeeNumber <= 5;
+SELECT FirstName, LastName, Department, OfficePhone
+FROM EMPLOYEE
+WHERE EmployeeNumber BETWEEN 2 AND 5;
