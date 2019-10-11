@@ -56,3 +56,6 @@ WHERE EmployeeNumber BETWEEN 2 AND 5;
 SELECT *
 FROM PROJECT
 WHERE ProjectName LIKE '2017 Q_ Portfolio Analysis';
+SELECT *
+FROM EMPLOYEE
+WHERE OfficePhone LIKE '360-287-88__';
