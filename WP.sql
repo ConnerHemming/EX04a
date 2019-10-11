@@ -43,3 +43,6 @@ AND NOT OfficePhone = '360-285-8430';
 SELECT FirstName, LastName, Department, OfficePhone 
 FROM EMPLOYEE
 WHERE Department IN ('Administration', 'Finance', 'Accounting');
+SELECT FirstName, LastName, Department, OfficePhone 
+FROM EMPLOYEE
+WHERE Department NOT IN ('Administration', 'Finance', 'Accounting');
