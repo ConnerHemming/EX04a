@@ -59,3 +59,6 @@ WHERE ProjectName LIKE '2017 Q_ Portfolio Analysis';
 SELECT *
 FROM EMPLOYEE
 WHERE OfficePhone LIKE '360-287-88__';
+SELECT *
+FROM EMPLOYEE
+WHERE OfficePhone LIKE '360-287-88%';
