@@ -25,3 +25,6 @@ ORDER BY Department;
 SELECT FirstName, LastName, Department, OfficePhone 
 FROM EMPLOYEE
 ORDER BY Department DESC;
+SELECT FirstName, LastName, Department, OfficePhone 
+FROM EMPLOYEE
+ORDER BY Department DESC, LastName ASC;
