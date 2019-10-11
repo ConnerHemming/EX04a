@@ -122,3 +122,7 @@ FROM    EMPLOYEE, ASSIGNMENT;
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT
 WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber;
+SELECT FirstName, LastName, ProjectID, HoursWorked
+FROM EMPLOYEE, ASSIGNMENT
+WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber
+ORDER BY EMPLOYEE.EmployeeNumber, ProjectID;
