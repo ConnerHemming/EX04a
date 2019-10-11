@@ -36,3 +36,7 @@ SELECT FirstName, LastName, Department, OfficePhone
 FROM EMPLOYEE
 WHERE Department = 'Accounting'
 OR OfficePhone = '360-285-8430';
+SELECT FirstName, LastName, Department, OfficePhone 
+FROM EMPLOYEE
+WHERE Department = 'Accounting'
+AND NOT OfficePhone = '360-285-8430';
