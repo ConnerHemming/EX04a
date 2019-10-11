@@ -127,6 +127,16 @@ WHERE   HoursWorked > 40
         (SELECT ProjectID
         FROM    PROJECT
         WHERE   Department = 'Accounting');
+SELECT  FirstName, LastName
+FROM    EMPLOYEE
+WHERE   EmployeeNumber IN
+      (SELECT DISTINCT EmployeeNumber
+        FROM    ASSIGNMENT
+        WHERE   HoursWorked > 40
+        AND     ProjectID IN
+                (SELECT ProjectID
+                FROM PROJECT
+                WHERE   Department = 'Accounting'));
 
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT
