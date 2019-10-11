@@ -16,3 +16,6 @@ WHERE Department = 'Finance';
 SELECT *
 FROM PROJECT
 WHERE MaxHours > 135;
+SELECT FirstName, LastName, Department, OfficePhone 
+FROM EMPLOYEE
+WHERE Department = 'Accounting';
