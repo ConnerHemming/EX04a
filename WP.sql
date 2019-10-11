@@ -73,3 +73,15 @@ FROM EMPLOYEE
 WHERE OfficePhone IS NOT NULL;
 SELECT COUNT(*)
 FROM PROJECT;
+SELECT COUNT(*) AS NumberOfProjects
+FROM PROJECT;
+SELECT COUNT (Department) AS NumberOfDepartments
+FROM PROJECT;
+SELECT COUNT (DISTINCT Department) AS NumberOfDepartments
+FROM PROJECT;
+SELECT SUM(MaxHours) AS TotalMaxHours, 
+AVG(MaxHours) AS AverageMaxHours, 
+MIN(MaxHours) AS MinimumMaxHours, 
+MAX(MaxHours) AS MaximumMaxHours
+FROM PROJECT
+WHERE ProjectID <= 1200;
