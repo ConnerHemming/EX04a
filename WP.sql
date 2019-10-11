@@ -119,3 +119,6 @@ WHERE   EmployeeNumber IN
                 WHERE   Department = 'Accounting'));
 SELECT  FirstName, LastName, ProjectID, HoursWorked
 FROM    EMPLOYEE, ASSIGNMENT;
+SELECT FirstName, LastName, ProjectID, HoursWorked
+FROM EMPLOYEE, ASSIGNMENT
+WHERE EMPLOYEE.EmployeeNumber = ASSIGNMENT.EmployeeNumber;
